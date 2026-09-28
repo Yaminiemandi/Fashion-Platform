@@ -1,0 +1,6 @@
+{
+  "name": "MAISON LUXE | Designer Accessories & Apparel",
+  "description": "Curated designer accessories, fine jewellery, chains, handbags, footwear, and luxury apparel for men, women, and kids from prestigious global fashion houses.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
