@@ -12,10 +12,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
   </head>
   <body class="bg-[#FAFAF9] text-stone-900 font-sans antialiased selection:bg-stone-800 selection:text-white">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script type="module">
+      import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+      createChat({
+        webhookUrl: 'https://yaminiemandi.app.n8n.cloud/webhook/504c00a5-dace-4a8b-ab6d-6891ef31b5b3/chat',
+        mode: 'window',
+        showWelcomeScreen: true,
+        defaultLanguage: 'en',
+        initialMessages: [
+          'Welcome to MAISON LUXE! ✨',
+          'I am your AI Shopping Concierge. How may I assist you with our accessories, chains, fine jewellery, or sizing today?'
+        ],
+        i18n: {
+          en: {
+            title: 'MAISON LUXE Concierge',
+            subtitle: 'Powered by n8n AI',
+            footer: 'Maison Vendôme Client Care',
+            getStarted: 'Start Consultation',
+            inputPlaceholder: 'Ask about pieces, brands, sizing...',
+          },
+        },
+      });
+    </script>
   </body>
 </html>
 
